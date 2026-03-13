@@ -1,0 +1,52 @@
+-- ==========================================
+-- 1. CREATE TABLE
+-- ==========================================
+
+CREATE TABLE liquor_sales (
+    invoice_number VARCHAR(50),
+    store_number INT,
+    store_name VARCHAR(255),
+    address VARCHAR(255),
+    city VARCHAR(100),
+    zipcode VARCHAR(20),
+    category VARCHAR(100),
+    vendor_name VARCHAR(255),
+    item_description VARCHAR(255),
+    bottle_volume_ml INT,
+    state_bottle_cost DECIMAL(10,2),
+    state_bottle_retail DECIMAL(10,2),
+    bottles_sold INT,
+    sale_dollars DECIMAL(10,2),
+    sale_date DATE
+);
+
+-- ==========================================
+-- 2. LOAD DATA INTO TABLE
+-- ==========================================
+
+COPY liquor_sales
+FROM 'C:/path/to/liquor_sales.csv'
+DELIMITER ','
+CSV HEADER;
+
+-- ==========================================
+-- 3. ANALYSIS QUERIES
+-- ==========================================
+
+-- Total sales by city
+SELECT city, SUM(sale_dollars) AS total_sales
+FROM liquor_sales
+GROUP BY city
+ORDER BY total_sales DESC;
+
+-- Top categories
+SELECT category, SUM(sale_dollars) AS total_sales
+FROM liquor_sales
+GROUP BY category
+ORDER BY total_sales DESC;
+
+-- Monthly trend
+SELECT DATE_TRUNC('month', sale_date) AS month, SUM(sale_dollars) AS total_sales
+FROM liquor_sales
+GROUP BY month
+ORDER BY month;

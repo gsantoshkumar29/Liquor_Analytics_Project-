@@ -1,121 +1,186 @@
-# 🍾 Liquor Sales Analytics Dashboard (Power BI)
+# 🍾 Liquor Sales Analytics Dashboard — End-to-End BI Project
 
-This project is an end-to-end Business Intelligence solution built using **Power BI**, **DAX**, and **data modeling best practices**.  
-It analyzes liquor sales across multiple cities and categories, providing insights into sales performance, trends, and customer behavior.
-
----
-
-## 📊 Project Overview
-
-The goal of this project is to transform raw liquor sales data into a clean, interactive, and insight-driven dashboard.  
-The report includes:
-
-- KPI cards (Total Sales, Bottles Sold, Avg Bottle Price, YTD, MTD)
-- Category-wise and city-wise performance
-- Running total trends
-- Drill-through pages for deeper analysis
-- Conditional formatting for better visual storytelling
-- Business insights summary
+This project is a complete end-to-end **Business Intelligence and Data Engineering pipeline** built using **Power BI**, **Python**, **SQL**, **PostgreSQL**, and **Jupyter Notebook**.  
+It transforms raw liquor sales data into a clean, interactive, insight-driven dashboard with advanced analytics and storytelling.
 
 ---
 
-## 🛠 Tools & Technologies
+# 📊 Project Overview
+
+The goal of this project is to analyze liquor sales across multiple cities and categories, uncover trends, and build a professional Power BI dashboard supported by a full backend pipeline.
+
+This project includes:
+
+- Power BI Dashboard (KPIs, trends, drill-through)
+- Python ETL pipeline (cleaning + transformation)
+- SQL scripts (table creation + analysis queries)
+- PostgreSQL data loading
+- Jupyter Notebook for exploration
+- Clean GitHub folder structure
+- Professional documentation
+
+---
+
+# 🛠 Tools & Technologies
 
 - **Power BI Desktop**
-- **DAX (Data Analysis Expressions)**
-- **Power Query**
-- **Data Modeling (Star Schema)**
-- **Git & GitHub** for version control
-- **CSV dataset** (Liquor Sales)
-
----
-
-## 📁 Project Structure
-
-Liquor_Analytics_Project/ │ ├── data/ │   └── liquor_sales.csv │ ├── report/ │   ├── Liquor_Dashboard.pbix │   └── Liquor_Dashboard.pdf │ ├── images/ │   ├── dashboard_overview.png │   ├── city_insights_page.png │   └── category_breakdown.png │ └── README.md
+- **Python (pandas, numpy, SQLAlchemy)**
+- **PostgreSQL**
+- **SQL**
+- **Jupyter Notebook**
+- **Git & GitHub**
+- **CSV dataset**
 
 
----
+# 📁 Project Structure
 
-## 📈 Key Features
 
-### ✔ Clean & Professional Dashboard
-- Modern layout  
-- Consistent color theme  
-- KPI cards for quick insights  
+Liquor_Analytics_Project/
+│
+├── data/
+│   ├── liquor_sales.csv
+│   └── liquor_sales_cleaned.csv
+│
+├── report/
+│   ├── Liquor_Dashboard.pbix
+│   └── Liquor_Dashboard.pdf
+│
+├── images/
+│   ├── dashboard_overview.png
+│   ├── city_insights_page.png
+│   └── category_breakdown.png
+│
+├── sql/
+│   └── liquor_sales_pipeline.sql
+│
+├── python/
+│   ├── etl_cleaning.py
+│   └── load_to_postgres.py
+│
+├── notebooks/
+│   └── Liquor_ETL.ipynb
+│
+└── README.md
 
-### ✔ Advanced DAX Measures
+
+
+
+# 📈 Power BI Dashboard Features
+
+### ✔ KPI Cards
 - Total Sales  
-- YTD Sales  
-- MTD Sales  
-- Running Total  
-- YoY Growth %  
-- Avg Sale per City  
+- Bottles Sold  
+- Avg Bottle Price  
+- YTD & MTD Sales  
+
+### ✔ Visuals
+- Category-wise sales  
+- City performance  
+- Running total trend  
+- Monthly trend  
+- Top categories  
 
 ### ✔ Drill-Through Page
-A dedicated **City Insights** page showing:
-- City-level KPIs  
+- City-level insights  
 - Category breakdown  
-- Running total trend  
-- Back button navigation  
+- Trend analysis  
+- Back navigation  
 
-### ✔ Conditional Formatting
-- Color scale for city performance  
-- Highlighting top/bottom categories  
-- Dynamic KPI colors  
-
-### ✔ Business Insights Summary
-A text-based narrative explaining:
-- Top-performing cities  
-- Best-selling categories  
-- Pricing trends  
-- Sales momentum  
+### ✔ Design & UX
+- Clean layout  
+- Consistent color theme  
+- Conditional formatting  
+- Professional spacing & alignment  
 
 ---
 
-## 📥 How to Use This Project
+# 🧠 Key Insights
+
+- **Des Moines** is the top-performing city  
+- **Vodka** leads all categories in total sales  
+- **Running total** shows strong upward momentum  
+- **Average bottle price** indicates premium product mix  
+- **MTD sales** show strong early-month performance  
+
+---
+
+# 🐍 Python ETL Pipeline
+
+### ✔ Cleaning steps:
+- Load raw CSV  
+- Standardize column names  
+- Convert date formats  
+- Remove missing values  
+- Add calculated fields  
+- Export cleaned dataset  
+
+Scripts included:
+- `etl_cleaning.py`
+- `load_to_postgres.py`
+
+---
+
+# 🗄 SQL & PostgreSQL
+
+### ✔ SQL pipeline includes:
+- Table creation  
+- Data loading  
+- Analysis queries  
+
+File included:
+- `liquor_sales_pipeline.sql`
+
+### ✔ Sample queries:
+- Total sales by city  
+- Top categories  
+- Monthly trend  
+
+
+
+# 📘 Jupyter Notebook
+
+Notebook includes:
+- Data exploration  
+- Cleaning steps  
+- Summary statistics  
+- Trend analysis  
+- Export cleaned CSV  
+
+File:
+- `Liquor_ETL.ipynb`
+
+---
+
+# 🧩 Skills Demonstrated
+
+- Power BI dashboard design  
+- DAX calculations  
+- Data modeling (Star Schema)  
+- Python ETL  
+- SQL analysis  
+- PostgreSQL data loading  
+- Jupyter Notebook exploration  
+- GitHub project structuring  
+- Business storytelling  
+
+---
+
+# 📤 How to Use This Project
 
 1. Download the `.pbix` file from the **report** folder  
 2. Open it in **Power BI Desktop**  
-3. Explore the dashboard and drill-through pages  
-4. Review the PDF for a static version of the report  
+3. Explore KPIs, visuals, and drill-through pages  
+4. Review the PDF for a static version  
+5. Run Python ETL scripts if you want to recreate the pipeline  
+6. Use SQL scripts to rebuild the database  
 
 ---
 
-## 📌 Insights Summary (From the Dashboard)
+# 📬 Contact
 
-- **Des Moines** is the top-performing city  
-- **Vodka** leads all categories with the highest sales share  
-- **Average bottle price** indicates a premium product mix  
-- **Running total** shows steady growth throughout 2024  
-- **MTD Sales** show strong early-month performance  
 
----
+Name: Santosh  
+Role: Aspiring Data Analyst & BI Developer  
 
-## 🧠 Skills Demonstrated
-
-- Data cleaning & transformation  
-- Data modeling (relationships, star schema)  
-- DAX calculations (advanced measures)  
-- Dashboard design & UX  
-- Drill-through navigation  
-- Business storytelling  
-- Git version control  
-
----
-
-## 📤 Exported Deliverables
-
-- **Power BI Report (.pbix)**  
-- **PDF version of the dashboard**  
-- **Screenshots for portfolio**  
-
----
-
-## 📬 Contact
-
-If you’d like to discuss this project or collaborate, feel free to reach out.
-
-Name: Santosh
-Role: Aspiring Data Analyst & BI Developer
+Feel free to connect for collaboration or feedback.
 email: Santoshgajula16@gmail.com

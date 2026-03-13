@@ -1,0 +1,21 @@
+date,store_id,store_name,city,category,product_id,product_name,bottle_volume_ml,bottle_price,bottles_sold,sale_dollars
+2024-01-03,101,City Spirits,Des Moines,Vodka,501,Crystal Vodka,750,12.99,24,311.76
+2024-01-05,102,Happy Liquor,Cedar Rapids,Whiskey,602,Oak Barrel Whiskey,1000,29.99,10,299.9
+2024-01-06,103,Sunrise Liquor,Iowa City,Rum,703,Golden Rum,750,15.49,18,278.82
+2024-01-08,101,City Spirits,Des Moines,Gin,804,Silver Gin,750,18.99,12,227.88
+2024-01-10,104,County Liquor,Ames,Tequila,905,Blue Agave Tequila,750,24.99,8,199.92
+2024-01-12,102,Happy Liquor,Cedar Rapids,Vodka,501,Crystal Vodka,750,12.99,30,389.7
+2024-01-14,105,Premium Liquor,Davenport,Whiskey,606,Heritage Whiskey,750,34.99,6,209.94
+2024-01-15,103,Sunrise Liquor,Iowa City,Rum,703,Golden Rum,750,15.49,20,309.8
+2024-01-17,101,City Spirits,Des Moines,Tequila,905,Blue Agave Tequila,750,24.99,5,124.95
+2024-01-18,104,County Liquor,Ames,Gin,804,Silver Gin,750,18.99,14,265.86
+2024-01-20,105,Premium Liquor,Davenport,Vodka,502,Arctic Ice Vodka,1000,19.99,16,319.84
+2024-01-22,102,Happy Liquor,Cedar Rapids,Whiskey,602,Oak Barrel Whiskey,1000,29.99,12,359.88
+2024-01-23,103,Sunrise Liquor,Iowa City,Gin,804,Silver Gin,750,18.99,10,189.9
+2024-01-25,101,City Spirits,Des Moines,Rum,703,Golden Rum,750,15.49,22,340.78
+2024-01-27,104,County Liquor,Ames,Tequila,905,Blue Agave Tequila,750,24.99,9,224.91
+2024-01-28,105,Premium Liquor,Davenport,Vodka,501,Crystal Vodka,750,12.99,18,233.82
+2024-01-29,102,Happy Liquor,Cedar Rapids,Gin,804,Silver Gin,750,18.99,11,208.89
+2024-01-30,103,Sunrise Liquor,Iowa City,Whiskey,606,Heritage Whiskey,750,34.99,7,244.93
+2024-02-01,101,City Spirits,Des Moines,Rum,703,Golden Rum,750,15.49,25,387.25
+2024-02-02,104,County Liquor,Ames,Vodka,502,Arctic Ice Vodka,1000,19.99,14,279.86
